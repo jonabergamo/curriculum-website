@@ -546,7 +546,6 @@ main {
     right: 0;
     width: 10px;
     height: 100%;
-    background: rgba(255,255,255,0.05);
 }
 
 #progressbar {
