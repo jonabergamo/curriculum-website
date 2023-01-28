@@ -14,12 +14,3 @@ menu.addEventListener('click', () => {
 window.addEventListener("load", function() {
     load.style.display = "none";
 })
-
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-        });
-    });
-});
