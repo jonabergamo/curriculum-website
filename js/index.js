@@ -10,11 +10,18 @@ menu.addEventListener('click', () => {
     NavMenu.classList.toggle('ativo');
 })
 
-setTimeout(function unwait(){
+/*setTimeout(function unwait(){
     load.style.display = "none";
     load.style.overflow = "none"
-}, 5000)
+}, 5000)*/
 
-/*window.addEventListener("load", function() {
+window.addEventListener("load", function() {
     load.style.display = "none";
-})*/
+})
+
+let progress = document.getElementById("progressbar")
+let totalHeight = document.body.scrollHeight - window.innerHeight
+window.onscroll = function(){
+    let progressHeight = (window.pageYOffset / totalHeight) * 100
+    progress.style.height = progressHeight + "%"
+}
