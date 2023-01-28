@@ -10,7 +10,11 @@ menu.addEventListener('click', () => {
     NavMenu.classList.toggle('ativo');
 })
 
-
-window.addEventListener("load", function() {
+setTimeout(function unwait(){
     load.style.display = "none";
-})
+    load.style.overflow = "none"
+}, 5000)
+
+/*window.addEventListener("load", function() {
+    load.style.display = "none";
+})*/
