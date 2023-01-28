@@ -23,8 +23,8 @@ const videos = [
   {
     title: "Website Curriculo (Simples)",
     subtitle: "Este website foi o primeiro que criei, ele consiste em um curriculo básico feito em HTML e CSS. Também possui um pouco de javascript onde adiciona um scroll bar colorido.",
-    url: "",
-    git: "",
+    url: "#projects",
+    git: "https://github.com/jonabergamo/Site-Curriculo",
     thumb: "./imgs/pastinha.svg",
     video_id: "rAzHvYnQ8DY"
   },
