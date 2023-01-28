@@ -5,40 +5,40 @@ const card = document.querySelector("div.card");
 
 const videos = [
   {
-    title: "Website estilo curriculo",
-    subtitle: "Website ainda em desenvolvimento, consiste em um curriculo criado utilizando HTML, CSS E JAVASCRIPT. Estou estudando torna-lo 100% responsivo para qualquer dispositivo.",
+    title: "Curriculum-style website",
+    subtitle: "Website still under development, it consists of a resume created using HTML, CSS, and JavaScript. I am studying to make it 100% responsive for any device.",
     url: "https://jonabergamo.netlify.app",
     git: "https://github.com/jonabergamo/curriculum-website",
     thumb: "./imgs/pastinha.svg",
     video_id: "GykTLqODQuU"
   },
   {
-    title: "Calculadora Simples",
-    subtitle: "Um site onde é possivel acessar uma calculadora que faz operações matematicas simples. Foi feita utilizando HTML, CSS E JAVASCRIPT",
+    title: "Simple Calculator",
+    subtitle: "A website where it is possible to access a calculator that performs simple mathematical operations. It was made using HTML, CSS and JAVASCRIPT.",
     url: "https://calculadora-jona.netlify.app",
     git: "https://github.com/jonabergamo/Calculadora",
     thumb: "./imgs/pastinha.svg",
     video_id: "HN1UjzRSdBk"
   },
   {
-    title: "Website Curriculo (Simples)",
-    subtitle: "Este website foi o primeiro que criei, ele consiste em um curriculo básico feito em HTML e CSS. Também possui um pouco de javascript onde adiciona um scroll bar colorido.",
+    title: "Simple Curriculum Website",
+    subtitle: "This website was the first one I created, it consists of a basic resume made in HTML and CSS. It also has a bit of javascript where it adds a colorful scroll bar.",
     url: "#projects",
     git: "https://github.com/jonabergamo/Site-Curriculo",
     thumb: "./imgs/pastinha.svg",
     video_id: "rAzHvYnQ8DY"
   },
   {
-    title: "Exercicios de Python",
-    subtitle: "Alguns exercicios feitos em python para estudo.",
+    title: "Python Exercises",
+    subtitle: "Some exercises done in python for study purposes.",
     url: "#projects",
     git: "https://github.com/jonabergamo/CursoemVideo",
     thumb: "./imgs/pastinha.svg",
     video_id: "ghTrp1x_1As"
   },
   {
-    title: "Efeito Matrix",
-    subtitle: "Este é um canvas em HTML que possui o efeito matrix feito utilizando JavaScript",
+    title: "Matrix effect",
+    subtitle: "This is an HTML canvas that has the matrix effect made using JavaScript.",
     url: "https://matrix-jona.netlify.app",
     git: "https://github.com/jonabergamo/Matrix",
     thumb: "./imgs/pastinha.svg",
@@ -83,4 +83,5 @@ document.querySelector(".close-modal").addEventListener("click", () => {
   modal.querySelector("iframe").src = ``;
   document.querySelector("body").style.overflow = "initial";
 });
+
 
