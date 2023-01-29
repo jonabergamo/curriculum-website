@@ -23,6 +23,7 @@ body{
     color: var(--white);
     background: #0B0A26;
     animation: 0.5s ease-out 0s 1 fade;
+    overflow-x: hidden;
 }
 
 @keyframes fade {
@@ -65,7 +66,6 @@ header {
     position: fixed;
 }
 .logos {
-    margin-left: 50px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -77,7 +77,6 @@ header {
 .logos img {
     height: 3rem;
     width: 3rem;
-    margin-right: 1.8rem;
     filter: invert();
 }
 .navigation .logo{
@@ -179,7 +178,8 @@ header {
 /*MAIN*/
 
 main {
-    max-width: 900px;
+    width: 100%;
+    max-width: 1000px;
     margin: 0 auto;
     padding: 0 1rem;
 
@@ -213,7 +213,7 @@ main {
 .about01 .linha {
     width: 15%;
     border-width: 1px;
-    margin-left: 4.0rem;
+    margin-left: 3rem;
     border-color: var(--blue);
 }
 
@@ -336,20 +336,15 @@ main {
 /* COLUNA 2*/
 
 .coluna2 img {
-    transform: translateX(5rem);
     width: 100%;
     transition: 0.3s;
     border-radius: 50%;
 }
 
-.coluna2 img:hover {
-    -webkit-box-shadow:0px 0px 51px 23px rgba(14,0,214,0.54);
-    -moz-box-shadow: 0px 0px 51px 23px rgba(14,0,214,0.54);
-    box-shadow: 0px 0px 51px 23px rgba(14,0,214,0.54);
-}
 .coluna2 {
     display: flex;
     flex-direction: column;
+    padding: 5rem auto;
 }
 
 .coluna2 h4 {
@@ -360,14 +355,20 @@ main {
 
 /* PAGINA 2*/
 
+.tudo {
+    display: flex;
+}
+
 .page-2 .about01 {
+    display: flex;
+    flex-direction: row;
     margin-top: 15rem;
 }
 
 .page-2 .skills {
     margin-top: 4rem;
     display: flex;
-    flex-direction: row;
+    flex-direction: c;
 }
 
 .page-2 .skills .secao {
@@ -410,12 +411,9 @@ main {
 
 }
 
-
-.secao #carinha {
-    margin-left: 4rem;
+#carinha {
+    padding-left: 15px;
 }
-
-
 
 
 /*PAGINA 3*/
@@ -477,8 +475,9 @@ main {
 CARDS
 ==================*/
 .cards {
-    width: 120%;
-    max-width: 980px;
+    width: 100%;
+    height: 100%;
+    max-width: 98rem;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 100px;
@@ -583,109 +582,11 @@ CARDS
   .footer {
     position: relative;
     margin-top: 5%;
-    width: 100%;
+    width: 100vw;
     height: 100px;
     background-color: #0D0B34;
-    box-shadow: 0px -20px 47px -35px rgba(0, 0, 0, 0.25);
   }
-/* RESPONSIVIDADE */
 
-@media (max-width:768px){
-
-    html {
-        font-size:70%;
-    }
-
-    .navigation{
-        padding: 55px 20px;
-    }
-    .menu{
-        display: block;
-    }
-    .menu.ativo .bar:nth-child(1){
-        transform:  translateY(30px) rotate(45deg);
-    }
-    .menu.ativo .bar:nth-child(2) {
-        opacity: 0;
-    }
-    .menu.ativo .bar:nth-child(3){
-        transform: translateY(-13px) rotate(-45deg);
-    }
-    .nav-menu{
-        position: fixed;
-        right: -100%;
-        top: 140px;
-        width: 40%;
-        height: 70%;
-        flex-direction: column;
-        justify-content: flex-start;
-        background: var(--dark);
-        gap: -10px;
-        transition: 0.8s;
-        box-shadow: 0px 16px 43px 7px rgba(0, 0, 0, 0.25);
-    }
-
-    .navigation ul li a {
-        font-size: 2rem;
-    }
-    .nav-menu.ativo{
-        right: 0;
-        padding-top: 40px;
-        padding-left: 30px;
-        align-items:flex-start;
-    }
-    .nav-item{
-        margin: 3px 0px;
-        font-size: 0.1rem;
-    }
-    .logos img {
-        height: 6rem;
-        width: 6rem;
-    }
-    .logos .logo{
-        font-size: 3rem;
-    }
-    /*main*/
-    
- 
-    .home{
-        padding: 100px 2%;
-        flex-direction: column;
-        text-align: center;
-        overflow: hidden;
-        gap: 5rem;
-    }
-    .home .text-h4{
-        font-size: 15px;
-    }
-    .home .text-h1{
-        font-size: 2.5rem;
-        line-height: 3rem;
-    }
-    .home p{
-        font-size: 1.5rem;
-    }
-    .home-img{
-        width: 125%;
-    }
-    
-    .page-1 {
-        padding-top: 10%;
-        margin-left: 10%;
-    }
-    .about-sec {
-        flex-direction: row;
-        justify-content: flex-start;
-    }
-   
-
-    .about-sec .coluna2 img {
-        padding-top: 35px;
-        margin-left: -10%;
-        margin-top: 10%;
-    }
-    
-}
 
 /* BARRA SCROLL COLORIDA */
 

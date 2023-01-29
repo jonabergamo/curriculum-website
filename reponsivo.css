@@ -1,0 +1,155 @@
+/* RESPONSIVIDADE */
+@media (max-width:1276px) {
+    html {
+        font-size: 50%;
+    }
+
+    #carinha {
+        width: 30%;
+    }
+
+
+
+}
+@media (max-width:899px) {
+    html {
+        font-size: 50%;
+    }
+
+    #carinha {
+        width: 59%;
+    }
+    .tudo {
+        flex-direction: column;
+    }
+    .cards {
+        width: 100%;
+        height: 100%;
+        max-width: 50rem;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-gap: 100px;
+      }
+
+
+
+
+}
+
+
+
+
+@media (max-width:768px){
+
+    html {
+        font-size:70%;
+    }
+
+    .navigation{
+        padding: 55px 20px;
+    }
+    .menu{
+        display: block;
+    }
+    .menu.ativo .bar:nth-child(1){
+        transform:  translateY(30px) rotate(45deg);
+    }
+    .menu.ativo .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .menu.ativo .bar:nth-child(3){
+        transform: translateY(-13px) rotate(-45deg);
+    }
+    .nav-menu{
+        position: fixed;
+        right: -100%;
+        top: 140px;
+        width: 40%;
+        height: 70%;
+        flex-direction: column;
+        justify-content: flex-start;
+        background: var(--dark);
+        gap: -10px;
+        transition: 0.8s;
+        box-shadow: 0px 16px 43px 7px rgba(0, 0, 0, 0.25);
+    }
+
+    .navigation ul li a {
+        font-size: 2rem;
+    }
+    .nav-menu.ativo{
+        right: 0;
+        padding-top: 40px;
+        padding-left: 30px;
+        align-items:flex-start;
+    }
+    .nav-item{
+        margin: 3px 0px;
+        font-size: 0.1rem;
+    }
+    .logos img {
+        height: 6rem;
+        width: 6rem;
+    }
+    .logos .logo{
+        font-size: 3rem;
+    }
+    /*main*/
+    
+    .coluna2 {
+        order: 1;
+    }
+
+    .coluna1 {
+        order: 2;
+    }
+    .tags-e-texto {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .tags-e-texto .apresentacao {
+        padding-top: 1rem;
+        font-size: 1.5rem;
+        width: 90%;
+    }
+
+    .home{
+        padding: 100px 2%;
+        flex-direction: column;
+        text-align: center;
+        overflow: hidden;
+        gap: 5rem;
+    }
+    .home .text-h4{
+        font-size: 15px;
+    }
+    .home .text-h1{
+        font-size: 2.5rem;
+        line-height: 3rem;
+    }
+    .home p{
+        font-size: 1.5rem;
+    }
+    .home-img{
+        width: 125%;
+    }
+    
+    .page-1 {
+        padding-top: 10%;
+        margin-left: 10%;
+    }
+    .about-sec {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+   
+
+    .about-sec .coluna2 img {
+        width: 80%;
+        padding-top: 35px;
+        margin-top: 10%;
+    }
+
+    
+}
