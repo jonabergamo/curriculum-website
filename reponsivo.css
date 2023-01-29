@@ -65,7 +65,7 @@
         right: -100%;
         top: 140px;
         width: 40%;
-        height: 70%;
+        height: 45%;
         flex-direction: column;
         justify-content: flex-start;
         background: var(--dark);
@@ -152,4 +152,16 @@
     }
 
     
+}
+
+@media (max-width:670px) {
+    
+    .page-2 .skills .secao {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 30px;
+        align-items: flex-start;
+    
+    }
 }

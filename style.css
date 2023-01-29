@@ -22,18 +22,8 @@ html {
 body{
     color: var(--white);
     background: #0B0A26;
-    animation: 0.5s ease-out 0s 1 fade;
     overflow-x: hidden;
 }
-
-@keyframes fade {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
 
 #load {
     background: #000 url(imgs/loading-loading-gif.gif) no-repeat center;
@@ -78,6 +68,7 @@ header {
     height: 3rem;
     width: 3rem;
     filter: invert();
+    margin-right: 15px;
 }
 .navigation .logo{
     color: var(--red);
@@ -122,7 +113,7 @@ header {
     border-radius: 3px;
     background: var(--white);
     margin: 15px auto;
-    margin-right: 120px;
+    margin-right: 15px;
     transition: all 0.3s;
 }
 .menu .bar:nth-child(1),
@@ -375,6 +366,7 @@ main {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
+    margin-bottom: 5%;
 
 }
 
@@ -387,6 +379,12 @@ main {
 
 }
 
+.coluna1-2 {
+    display: flex;
+}
+.coluna2 {
+    display: flex;
+}
 .coluna-1-itens{
     margin-right: 11.1rem;
     margin-left: 1rem;
