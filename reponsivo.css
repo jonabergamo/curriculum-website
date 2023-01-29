@@ -42,11 +42,13 @@
 @media (max-width:768px){
 
     html {
-        font-size:70%;
+        font-size:55%;
     }
-
+    header {
+        padding-bottom: 5rem;
+    }
     .navigation{
-        padding: 55px 20px;
+        padding: 0.1rem;
     }
     .menu{
         display: block;
@@ -92,7 +94,7 @@
         width: 6rem;
     }
     .logos .logo{
-        font-size: 3rem;
+        font-size: 2rem;
     }
     /*main*/
     

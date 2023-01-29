@@ -108,11 +108,11 @@ header {
 }
 .menu .bar{
     display: block;
-    width: 70px;
-    height: 6px;
+    width: 45px;
+    height: 3px;
     border-radius: 3px;
     background: var(--white);
-    margin: 15px auto;
+    margin: 10px auto;
     margin-right: 15px;
     transition: all 0.3s;
 }
