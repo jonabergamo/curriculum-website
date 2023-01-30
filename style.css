@@ -34,6 +34,12 @@ body{
 
 }
 
+html, body {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
 
 
 
@@ -175,6 +181,7 @@ main {
 
 }
 
+
 /* PAGE 1 */
 
 .page-1 {
@@ -191,14 +198,17 @@ main {
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     transition: 0.5s;
 }
 
 .about01 .number {
     font-family: 'PT Mono', monospace;
-    color: var(--blue)
+    color: var(--blue);
+    transition: 2s;
 }
+
+
 
 .about01 .linha {
     width: 15%;
@@ -258,10 +268,9 @@ main {
     display: flex;
     flex-direction: row;
     align-items: center;
-    filter: invert();
     margin-left: 5.0rem;
     gap: 3.0rem;
-    transition: 2s;
+    
     
 }
 
@@ -273,12 +282,22 @@ main {
     width: 3rem;
     
 }
+.linkedin {
+    transition: 0.4s;
+}
 .linkedin:hover{
     transform:translateY(-5px) ;
 }
 
+.github {
+    transition: 0.4s;
+}
+
 .github:hover{
     transform:translateY(-5px) ;
+}
+.instagram {
+    transition: 0.4s;
 }
 .instagram:hover{
     transform:translateY(-5px) ;
@@ -312,6 +331,7 @@ main {
     font-size: 1.5rem;
     width: 60%;
 }
+
 
 .tags-e-texto{
     margin-top: 3%;
@@ -488,6 +508,7 @@ CARDS
     filter: invert();
     margin-top: 16%;
     margin-left: 85%;
+    transition: 0.3s;
   }
   
   
@@ -497,14 +518,15 @@ CARDS
     filter: invert();
     margin-top: 25%;
     margin-left: 35%;
+    transition: 0.3s;
   }
   
   #url:hover {
-    transform: translateY(-4px);
+    transform: translateY(-6px);
   }
   
   #git:hover {
-    transform: translateY(-4px);
+    transform: translateY(-6px);
   }
   
   
@@ -534,13 +556,14 @@ CARDS
     flex-direction: column;
     background: #0D0B34;
     box-shadow: 0px 4px 32px -10px rgba(0, 0, 0, 0.25);
-    transition: all 0.3s ease 0s;
+    transition: all 0.8s ease 0s;
     border-radius: 10px;
+    cursor: pointer;
   
   }
 
   .card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-25px);
   }
   
   
