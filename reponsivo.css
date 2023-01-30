@@ -67,7 +67,7 @@
         right: -100%;
         top: 50px;
         width: 40%;
-        height: 35%;
+        height: 100%;
         flex-direction: column;
         justify-content: flex-start;
         background: var(--dark);
