@@ -418,27 +418,29 @@ main {
 .experience-tab {
     margin-top: 5rem;
     display: flex;
+    flex-direction: column;
     align-items: flex-start;
+    gap: 80px;
+    transition: 0.5s;
 }
-.experience-tab .icones {
+.icones {
     display: flex;
     flex-direction: column;
-    gap: 18rem;
-    margin-right: 2rem;
 }
 
 .experience-tab .textos-aba-xp {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 13rem;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 25px;
 }
 
 .texto-exp {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: 0.5rem
+    gap: 0.5rem;
 }
 .titulo {
     font-size: 2.4rem;
