@@ -582,8 +582,11 @@ CARDS
     width: 100vw;
     height: 100px;
     background-color: #0D0B34;
+    display: flex;
+    justify-content:center;
+    align-items: center;
   }
-
+ 
 
 /* BARRA SCROLL COLORIDA */
 

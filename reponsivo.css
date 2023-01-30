@@ -67,7 +67,7 @@
         right: -100%;
         top: 50px;
         width: 40%;
-        height: 45%;
+        height: 35%;
         flex-direction: column;
         justify-content: flex-start;
         background: var(--dark);
@@ -100,10 +100,12 @@
     
     .coluna2 {
         order: 1;
+        transition: 5s;
     }
 
     .coluna1 {
         order: 2;
+        transition: 5s;
     }
     .tags-e-texto {
         flex-direction: column;
