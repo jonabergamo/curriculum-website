@@ -32,3 +32,9 @@ window.onscroll = function(){
 }
 
 
+const html = document.querySelector("html")
+const checkbox = document.querySelector('#darkModeToggle')
+
+checkbox.addEventListener('change', function(){
+    html.classList.toggle('dark-mode')
+})
