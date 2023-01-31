@@ -347,7 +347,7 @@ main {
     flex-direction: column;
     justify-content: space-around;
     gap: 2rem;
-    width: 2%;
+    width: 4%;
     filter: var(--invert);
     position: relative;
     z-index: -1;
