@@ -304,11 +304,11 @@ main {
 }
 
 #skills {
-    scroll-margin-block-start: 0px;
+    scroll-margin-block-start: -100px;
 }
 
 #experience {
-    scroll-margin-block-start: 220px;
+    scroll-margin-block-start: 100px;
 }
 #projects {
     scroll-margin-block-end: 2200px;
