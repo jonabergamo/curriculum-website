@@ -23,7 +23,7 @@ const videos = [
   {
     title: "Website Curriculo (Simples)",
     subtitle: "Este website foi o primeiro que criei, ele consiste em um curriculo básico feito em HTML e CSS. Também possui um pouco de javascript onde adiciona um scroll bar colorido.",
-    url: "#projects",
+    url: "",
     git: "https://github.com/jonabergamo/Site-Curriculo",
     thumb: "./imgs/pastinha.svg",
     video_id: "rAzHvYnQ8DY"
@@ -31,7 +31,7 @@ const videos = [
   {
     title: "Exercicios de Python",
     subtitle: "Alguns exercicios feitos em python para estudo.",
-    url: "#projects",
+    url: "",
     git: "https://github.com/jonabergamo/CursoemVideo",
     thumb: "./imgs/pastinha.svg",
     video_id: "ghTrp1x_1As"
@@ -51,6 +51,7 @@ videos.map(video => {
   const cardClone = card.cloneNode(true);
   cardClone.setAttribute("id", video.video_id);
   cardClone.querySelector("img").src = video.thumb;
+  cardClone.querySelector("img").src = video.thumb
   cardClone.querySelector('#url-link').href = video.url;
   cardClone.querySelector('#git-link').href = video.git;
   cardClone.querySelector(".title").innerHTML = video.title;
@@ -60,27 +61,4 @@ videos.map(video => {
 });
 
 card.remove();
-
-// Modal actions
-const modalOverlay = document.querySelector(".modal-overlay");
-const modal = document.querySelector(".modal");
-const cards = [...document.querySelectorAll(".cards .card")];
-
-cards.forEach(card => {
-  card.addEventListener("click", () => {
-    modal.querySelector(
-      "iframe"
-    ).src = `https://www.youtube.com/embed/${card.getAttribute("id")}`;
-    modalOverlay.classList.add("active");
-    modal.classList.add("active");
-    document.querySelector("body").style.overflow = "hidden";
-  });
-});
-
-document.querySelector(".close-modal").addEventListener("click", () => {
-  modalOverlay.classList.remove("active");
-  modal.classList.remove("active");
-  modal.querySelector("iframe").src = ``;
-  document.querySelector("body").style.overflow = "initial";
-});
 
