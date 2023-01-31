@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400&family=PT+Mono&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400&family=Nanum+Myeongjo&family=PT+Mono&display=swap');
+
  /* ROOT */
 
 *{
@@ -19,14 +21,18 @@ html {
     --white:#fff;
     --dark:#1e1c2a;
     --main:#0B0A26;
+    --invert: invert();
 }
 .dark-mode:root
 {
+    --invert: none;
     --blue: #0B60C9;
     --white:rgb(2, 2, 2);
-    --dark:#fafafa;
-    --main:#f1f0f8;
+    --dark:#e9e9e9;
+    --main:#e8e8e7;
 }
+
+
 body
 {
     color: var(--white);
@@ -71,7 +77,6 @@ header {
     width: 100%;
     background: var(--main);
     box-shadow: 0px 4px 69px 8px rgba(0, 0, 0, 0.25);
-    transition: all 0.5s;
     position: fixed;
 }
 .logos {
@@ -83,11 +88,19 @@ header {
     
 }
 
-.logos img {
-    height: 3rem;
-    width: 3rem;
-    filter: invert();
-    margin-right: 15px;
+.logos::before {
+    margin-right: 1rem;
+    font-family: 'Nanum Myeongjo', serif;
+    font-weight: 100;
+    content: "</>";
+    font-size: 2.5rem;
+    transition: 0.5s;
+}
+
+
+#logo-img {
+    color: white;
+    font-size: 1.5rem;
 }
 .navigation .logo{
     color: var(--red);
@@ -196,7 +209,7 @@ header {
     right: 0;
     bottom: 0;
     background-color: var(--main);
-    box-shadow: inset 0px 0px 16px 4px #000000;
+    box-shadow: inset 0px 0px 6px 3px rgba(0, 0, 0, 0.5);
     transition: .4s;
     border-radius: 34px;
     display: flex;
@@ -239,7 +252,7 @@ header {
 }
 .switch input:checked + .slider 
 {
-    background-color: #0E0D2E;
+    background-color: #ffffff;
 }
  
 .switch input:checked + .slider:before
@@ -259,14 +272,6 @@ header {
     transform: translateX(11px);
     opacity: 1;
 }
-
-#darkModeToggle + body
-{
-    color: black;
-    background: white;
-}
-
-
 
 
 
@@ -342,11 +347,12 @@ main {
     flex-direction: column;
     justify-content: space-around;
     gap: 2rem;
-    width: 5%;
-    filter: invert();
+    width: 2%;
+    filter: var(--invert);
     position: relative;
     z-index: -1;
 }
+
 
 .informa .textos {
     display: flex;
@@ -362,14 +368,15 @@ main {
     transition: 0.3;
     transition: 0.3s;
 }
-
+.coluna1{
+    width: 50%;
+}
 .coluna1 .icones-sociais {
     margin-top: 1rem;
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-left: 5.0rem;
-    gap: 3.0rem;
+    gap: 3.0rem; 
     
     
 }
@@ -380,23 +387,32 @@ main {
     cursor: pointer;
     margin-top: 3.0rem;
     width: 3rem;
+    transition: 1s;
     
 }
-.linkedin {
-    transition: 0.4s;
+
+
+.linkedin path{
+    
+    fill: var(--white) !important;
 }
+
 .linkedin:hover{
     transform:translateY(-5px) ;
 }
-
 .github {
+    scale: 40%;
+}
+.github path{
+    fill: var(--white) !important;
     transition: 0.4s;
 }
 
 .github:hover{
     transform:translateY(-5px) ;
 }
-.instagram {
+.instagram path{
+    fill: var(--white);
     transition: 0.4s;
 }
 .instagram:hover{
@@ -419,7 +435,6 @@ main {
 }
 
 .grid-tags {
-    margin-top: 2rem;
     display: grid;
     grid-template-columns: repeat(3, 96px);
     grid-column-gap: 0.1rem;
@@ -434,7 +449,7 @@ main {
 
 
 .tags-e-texto{
-    margin-top: 3%;
+    margin-top: 1%;
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
@@ -445,8 +460,9 @@ main {
 
 /* COLUNA 2*/
 
-.coluna2 img {
-    width: 100%;
+.imagem-minha {
+    width: 35%;
+    height: 35%;
     transition: 0.3s;
     border-radius: 50%;
     box-shadow: 0px 4px 16px 6px rgba(0, 0, 0, 0.4);
@@ -717,7 +733,8 @@ CARDS
     margin-top: 5%;
     width: 100vw;
     height: 100px;
-    background-color: #0D0B34;
+    background-color: var(--main);
+    box-shadow: 0px 4px 69px 8px rgba(0, 0, 0, 0.25);
     display: flex;
     justify-content:center;
     align-items: center;
