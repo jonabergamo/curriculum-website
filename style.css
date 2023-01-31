@@ -311,7 +311,7 @@ main {
     scroll-margin-block-start: 100px;
 }
 #projects {
-    scroll-margin-block-end: 2200px;
+    scroll-margin-block-start: -70px;
 }
 .about01 {
     display: flex;
