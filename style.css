@@ -457,7 +457,6 @@ main {
     
 }
 .tags-e-texto .apresentacao {
-    padding-top: 1rem;
     font-size: 1.5rem;
     width: 60%;
 }
@@ -486,13 +485,13 @@ main {
 .coluna2 {
     display: flex;
     flex-direction: column;
-    padding: 5rem auto;
+    padding: 1rem auto;
 }
 
 .coluna2 h4 {
+    text-align: justify;
     font-size: 1.2rem;
-    margin-top: 4%;
-    transform:translateX(-5%);
+
 }
 
 /* PAGINA 2*/
