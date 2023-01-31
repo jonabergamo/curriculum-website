@@ -31,4 +31,15 @@ window.onscroll = function(){
     progress.style.height = progressHeight + "%"
 }
 
+// modo escuro
 
+const html = document.querySelector("html")
+const body = document.querySelector("body")
+const img = document.querySelector("#logo-img")
+const checkbox = document.querySelector('#darkMode')
+
+checkbox.addEventListener('change', function(){
+    html.classList.toggle('dark-mode')
+    body.classList.toggle('dark-mode')
+    img.style.filter = "invert()"
+})
