@@ -27,7 +27,7 @@ AOS.init({
 let progress = document.getElementById("progressbar")
 let totalHeight = document.body.scrollHeight - window.innerHeight
 window.onscroll = function(){
-    let progressHeight = (window.pageYOffset / totalHeight) * 100
+    let progressHeight = (window.pageYOffset / totalHeight) * 83
     progress.style.height = progressHeight + "%"
 }
 
