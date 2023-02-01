@@ -97,20 +97,13 @@
     }
     /*main*/
     
-    .coluna2 {
-        order: 1;
-        transition: 5s;
-    }
-
-    .coluna1 {
-        order: 2;
-        transition: 5s;
-    }
     .tags-e-texto {
         flex-direction: column;
         align-items: flex-start;
     }
-
+    .imagem-minha {
+        margin-top: 200px;
+    }
     .tags-e-texto .apresentacao {
         padding-top: 1rem;
         font-size: 1.5rem;
@@ -143,7 +136,7 @@
         margin-left: 10%;
     }
     .about-sec {
-        flex-direction: column;
+        flex-direction: row;
         justify-content: flex-start;
     }
    
@@ -158,7 +151,32 @@
 }
 
 @media (max-width:670px) {
-    
+    main {
+        margin-left: 5%;
+    }
+    .coluna1 {
+        order: 1;
+    }
+    .coluna2 {
+        order: 3;
+    }
+    .about-sec {
+        flex-direction: column;
+    }
+    .about-sec h1, h4{
+        width: 500px;
+    }
+
+    .tag-ret h4{
+        display: flex;
+        justify-content: center;
+       width: 50px;
+    }
+    .imagem-minha {
+        width: 50%;
+        margin-top: 0;
+
+    }
     .page-2 .skills .secao {
         display: flex;
         flex-direction: column;
