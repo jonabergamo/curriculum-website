@@ -2,7 +2,7 @@
 
 @media (max-width:1276px) {
     html {
-        font-size: 50%;
+        font-size: 60%;
     }
 
     #carinha {
@@ -42,7 +42,7 @@
 @media (max-width:768px){
 
     html {
-        font-size:40%;
+        font-size:45%;
     }
     header {
         padding-bottom: 5rem;
