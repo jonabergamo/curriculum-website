@@ -36,14 +36,7 @@ const videos = [
     thumb: "./imgs/pastinha.svg",
     video_id: "ghTrp1x_1As"
   },
-  {
-    title: "Efeito Matrix",
-    subtitle: "Este é um canvas em HTML que possui o efeito matrix feito utilizando JavaScript",
-    url: "https://matrix-jona.netlify.app",
-    git: "https://github.com/jonabergamo/Matrix",
-    thumb: "./imgs/pastinha.svg",
-    video_id: "GSqR2i-Pq6o"
-  },
+
 
 ];
 
