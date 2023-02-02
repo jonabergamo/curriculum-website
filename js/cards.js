@@ -7,7 +7,7 @@ const videos = [
   {
     title: "Website estilo curriculo",
     subtitle: "Website ainda em desenvolvimento, consiste em um curriculo criado utilizando HTML, CSS E JAVASCRIPT. Estou estudando torna-lo 100% responsivo para qualquer dispositivo.",
-    url: "https://jonabergamo.netlify.app",
+    url: "https://www.figma.com/file/P5O1qmWbpnXrOVv37QIXle/Curriculum---Jona-.B?t=rdp6CXC9wWrlmg2B-6",
     git: "https://github.com/jonabergamo/curriculum-website",
     thumb: "./imgs/pastinha.svg",
     video_id: "GykTLqODQuU"
