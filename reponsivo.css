@@ -1,4 +1,5 @@
 /* RESPONSIVIDADE */
+
 @media (max-width:1276px) {
     html {
         font-size: 50%;
@@ -41,10 +42,14 @@
 @media (max-width:768px){
 
     html {
-        font-size:55%;
+        font-size:40%;
     }
     header {
         padding-bottom: 5rem;
+    }
+
+    main {
+        margin-left: 50px;
     }
     .navigation{
         padding: 2rem;
@@ -102,12 +107,12 @@
         align-items: flex-start;
     }
     .imagem-minha {
-        margin-top: 200px;
+        margin-top: 30px;
     }
     .tags-e-texto .apresentacao {
         padding-top: 1rem;
         font-size: 1.5rem;
-        width: 90%;
+        width: 80%;
     }
 
     .home{
@@ -133,7 +138,6 @@
     
     .page-1 {
         padding-top: 10%;
-        margin-left: 10%;
     }
     .about-sec {
         flex-direction: row;
@@ -143,17 +147,14 @@
 
     .about-sec .coluna2 img {
         width: 80%;
-        padding-top: 35px;
-        margin-top: 10%;
+
     }
 
     
 }
 
 @media (max-width:670px) {
-    main {
-        margin-left: 5%;
-    }
+
     .coluna1 {
         order: 1;
     }
@@ -164,7 +165,7 @@
         flex-direction: column;
     }
     .about-sec h1, h4{
-        width: 500px;
+        width: 450px;
     }
 
     .tag-ret h4{
@@ -184,5 +185,15 @@
         gap: 30px;
         align-items: flex-start;
     
+    }
+
+}
+
+@media (max-width:522px) {
+    .about-sec h1{
+        font-size: 3.8rem;
+    }
+    .about-sec h4{
+        font-size: 2rem;
     }
 }

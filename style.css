@@ -190,7 +190,6 @@ header {
 
 .switch {
     position: relative;
-    display: inline-block;
     width: 55px;
     height: 30px;
     top: 2px;
