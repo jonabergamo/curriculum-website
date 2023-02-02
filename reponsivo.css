@@ -47,9 +47,12 @@
     header {
         padding-bottom: 5rem;
     }
+    .page-1, .page-2, .page-3, .page-4 {
+        margin-left: 10%;
+    }
 
-    main {
-        margin-left: 50px;
+    body {
+        width: 100%;
     }
     .navigation{
         padding: 2rem;
